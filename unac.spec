@@ -11,6 +11,7 @@ Group: Text tools
 Source: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%version.orig.tar.gz
 URL: http://www.nongnu.org/unac/
 BuildRoot: %{_tmppath}/%{name}-root
+BuildRequires: gettext-devel
 
 %description
 unac is a C library and command that remove accents from a string.
