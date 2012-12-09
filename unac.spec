@@ -5,7 +5,7 @@
 Summary: A command that removes accents
 Name: unac
 Version: 1.8.0
-Release: %mkrel 4
+Release: %mkrel 3
 License: GPLv2+
 Group: Text tools
 Source: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%version.orig.tar.gz
@@ -64,11 +64,11 @@ autoreconf -fi
 %make
 
 %install
-rm -rf %{buildroot}
+rm -rf ${RPM_BUILD_ROOT}
 %makeinstall_std
 
 %clean
-rm -rf %{buildroot}
+rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
@@ -88,3 +88,24 @@ rm -rf %{buildroot}
 %{_includedir}/unac.h
 %{_mandir}/man3/unac.3*
 
+
+
+%changelog
+* Fri May 06 2011 Oden Eriksson <oeriksson@mandriva.com> 1.8.0-3mdv2011.0
++ Revision: 670743
+- mass rebuild
+
+* Sat Dec 04 2010 Oden Eriksson <oeriksson@mandriva.com> 1.8.0-2mdv2011.0
++ Revision: 608104
+- rebuild
+
+* Fri Jan 01 2010 GÃ¶tz Waschk <waschk@mandriva.org> 1.8.0-1mdv2010.1
++ Revision: 484860
+- import unac
+
+
+* Fri Jan  1 2010 Götz Waschk <waschk@mandriva.org> 1.8.0-1mdv2010.1
+- adapt for mandriva
+
+* Fri Sep 21 2000 Loic Dachary <loic@senga.org>
+- Create
