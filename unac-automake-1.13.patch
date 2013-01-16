@@ -1,0 +1,11 @@
+--- unac-1.8.0.orig/configure.ac.bero	2013-01-16 03:10:42.476944445 +0100
++++ unac-1.8.0.orig/configure.ac	2013-01-16 03:10:50.834844738 +0100
+@@ -26,7 +26,7 @@ AC_SUBST(MICRO_VERSION)
+ AM_INIT_AUTOMAKE([unac], $VERSION, nosubst)
+ AC_PREREQ(2.50)
+ 
+-AM_CONFIG_HEADER(config.h)
++AC_CONFIG_HEADERS([config.h])
+ 
+ AC_PROG_MAKE_SET
+ 

@@ -5,12 +5,12 @@
 Summary: A command that removes accents
 Name: unac
 Version: 1.8.0
-Release: %mkrel 3
+Release: 4
 License: GPLv2+
 Group: Text tools
-Source: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%version.orig.tar.gz
+Source0: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%version.orig.tar.gz
+Patch0: unac-automake-1.13.patch
 URL: http://www.nongnu.org/unac/
-BuildRoot: %{_tmppath}/%{name}-root
 BuildRequires: gettext-devel
 
 %description
@@ -55,6 +55,7 @@ command on GNU/Linux will show all charset supported.
 
 %prep
 %setup -q -n %name-%version.orig
+%apply_patches
 touch config.rpath
 autoreconf -fi
 
