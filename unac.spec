@@ -5,7 +5,7 @@
 Summary: A command that removes accents
 Name: unac
 Version: 1.8.0
-Release: 4
+Release: 5
 License: GPLv2+
 Group: Text tools
 Source0: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%version.orig.tar.gz
