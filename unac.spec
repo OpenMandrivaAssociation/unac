@@ -5,7 +5,7 @@
 Summary: A command that removes accents
 Name: unac
 Version: 1.8.0
-Release: 12
+Release: 13
 License: GPLv2+
 Group: Text tools
 Source0: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%{version}.orig.tar.gz
@@ -15,7 +15,7 @@ BuildRequires: gettext-devel
 
 %description
 unac is a C library and command that remove accents from a string.
-For instance the string été will become ete.  It provides a command
+For instance the string Ã©tÃ© will become ete.  It provides a command
 line interface that removes accents from a string given in argument
 (unaccent command). In the library function and the command, the
 charset of the input string is specified as an argument. The input
@@ -29,7 +29,7 @@ Summary: A C library that removes accents
 
 %description -n %libname
 unac is a C library and command that remove accents from a string.
-For instance the string été will become ete.  It provides a command
+For instance the string Ã©tÃ© will become ete.  It provides a command
 line interface that removes accents from a string given in argument
 (unaccent command). In the library function and the command, the
 charset of the input string is specified as an argument. The input
@@ -45,7 +45,7 @@ Provides: %{name}-devel = %{version}-%{release}
 
 %description -n %develname
 unac is a C library and command that remove accents from a string.
-For instance the string été will become ete.  It provides a command
+For instance the string Ã©tÃ© will become ete.  It provides a command
 line interface that removes accents from a string given in argument
 (unaccent command). In the library function and the command, the
 charset of the input string is specified as an argument. The input
