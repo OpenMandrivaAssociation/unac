@@ -55,7 +55,7 @@ command on GNU/Linux will show all charset supported.
 
 %prep
 %setup -q -n %{name}-%{version}.orig
-%apply_patches
+%autopatch -p1
 touch config.rpath
 autoreconf -fi
 
