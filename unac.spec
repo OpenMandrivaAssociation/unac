@@ -10,7 +10,7 @@ License: GPLv2+
 Group: Text tools
 Source0: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%{version}.orig.tar.gz
 Patch0: unac-automake-1.13.patch
-URL: http://www.nongnu.org/unac/
+URL: https://www.nongnu.org/unac/
 BuildRequires: gettext-devel
 
 %description
