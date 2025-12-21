@@ -11,6 +11,11 @@ Group: Text tools
 Source0: http://ftp.de.debian.org/debian/pool/main/u/unac/unac_%{version}.orig.tar.gz
 Patch0: unac-automake-1.13.patch
 URL: https://www.nongnu.org/unac/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: gettext-devel
 
 %description
